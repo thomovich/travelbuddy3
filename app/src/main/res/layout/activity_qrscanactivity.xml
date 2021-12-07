@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main.QRscanactivity"
+    android:id="@+id/relativelayout"
+    >
+
+
+
+    <me.dm7.barcodescanner.zxing.ZXingScannerView
+        android:id="@+id/zxscanner"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </me.dm7.barcodescanner.zxing.ZXingScannerView>
+
+    <Button
+        android:id="@+id/typeinbtn"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/zxscanner"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/black"
+        android:text="type in qr code">
+
+    </Button>
+    <ImageButton
+        android:id="@+id/switch_off"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/gray_round"
+        android:src="@drawable/ic_power"
+        android:visibility="invisible"/>
+
+
+    <ImageButton
+        android:id="@+id/switch_on"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_centerHorizontal="true"
+        android:elevation="10dp"
+        android:src="@drawable/ic_power"
+        android:background="@drawable/green_round"
+        android:visibility="invisible"/>
+
+
+</RelativeLayout>
